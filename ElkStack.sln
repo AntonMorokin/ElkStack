@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElkStack", "ElkStack\ElkStack.csproj", "{38E135A2-6705-4299-B4F7-A70ED7F48469}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E135A2-6705-4299-B4F7-A70ED7F48469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E135A2-6705-4299-B4F7-A70ED7F48469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E135A2-6705-4299-B4F7-A70ED7F48469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E135A2-6705-4299-B4F7-A70ED7F48469}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31B7558D-B2E9-4874-881C-01853454082D}
+	EndGlobalSection
+EndGlobal
