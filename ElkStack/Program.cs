@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using NLog.Web;
 
 namespace ElkStack
 {
@@ -10,13 +13,14 @@ namespace ElkStack
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Configuration.AddXmlFile("nlog.config");
+
+            builder.Logging.ClearProviders();
+            builder.Host.UseNLog();
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            
-            builder.Services.AddLogging();
 
             var app = builder.Build();
 
