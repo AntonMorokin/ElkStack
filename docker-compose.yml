@@ -6,3 +6,12 @@ services:
     build:
       context: .
       dockerfile: ElkStack/Dockerfile
+    container_name: webapi
+    depends_on:
+      - logstash
+  logstash:
+    image: ${DOCKER_REGISTRY-}logstash
+    build:
+      context: .
+      dockerfile: Logstash/Dockerfile
+    container_name: logstash

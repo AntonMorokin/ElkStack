@@ -7,6 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElkStack", "ElkStack\ElkSta
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{343F8AA8-29F9-4DFE-94B8-87CF6E4D19AE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logstash", "Logstash", "{F7FA8629-D026-420C-B6AE-3A117AB5C8C2}"
+	ProjectSection(SolutionItems) = preProject
+		Logstash\Dockerfile = Logstash\Dockerfile
+		Logstash\logstash.yml = Logstash\logstash.yml
+		Logstash\main-pipeline.conf = Logstash\main-pipeline.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

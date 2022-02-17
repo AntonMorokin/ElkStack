@@ -7,3 +7,8 @@ services:
       - ASPNETCORE_URLS=http://+:5000
     ports:
       - "5000:5000"
+  logstash:
+    ports:
+      - "5044:5044"
+      - "9600:9600"
+      - "9000:9000/udp"
