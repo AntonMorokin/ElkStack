@@ -15,3 +15,11 @@ services:
       context: .
       dockerfile: Logstash/Dockerfile
     container_name: logstash
+    depends_on:
+      - elastic
+  elastic:
+    image: ${DOCKER_REGISTRY-}elasticsearch
+    build:
+      context: .
+      dockerfile: Elasticsearch/Dockerfile
+    container_name: elastic
