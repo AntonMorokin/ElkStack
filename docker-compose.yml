@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  elkstack:
+    image: ${DOCKER_REGISTRY-}elkstack
+    build:
+      context: .
+      dockerfile: ElkStack/Dockerfile
