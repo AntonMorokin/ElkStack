@@ -1,10 +1,10 @@
-﻿using ElkStack.Constants;
+﻿using WebApi.Constants;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace ElkStack.Controllers
+namespace WebApi.Controllers
 {
     [ApiController]
     [Route(EndpointRoutes.ApiPrefix + "/" + EndpointRoutes.CarsControllerName)]

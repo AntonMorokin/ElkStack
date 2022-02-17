@@ -1,4 +1,4 @@
-﻿namespace ElkStack.Constants
+﻿namespace WebApi.Constants
 {
     internal static class EndpointRoutes
     {
