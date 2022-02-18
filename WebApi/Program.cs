@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog.Web;
+using WebApi.Conventions;
 
 namespace WebApi
 {
@@ -18,7 +19,12 @@ namespace WebApi
             builder.Logging.ClearProviders();
             builder.Host.UseNLog();
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers(o =>
+            {
+                o.Conventions.Add(new RoutePrefixConvention());
+                o.Conventions.Add(DashedTokenTransformer.CreateConvention());
+            });
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
