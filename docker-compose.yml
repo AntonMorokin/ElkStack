@@ -23,3 +23,11 @@ services:
       context: .
       dockerfile: Elasticsearch/Dockerfile
     container_name: elastic
+  kibana:
+    image: ${DOCKER_REGISTRY-}kibana
+    build:
+      context: .
+      dockerfile: Kibana/Dockerfile
+    container_name: kibana
+    depends_on:
+      - elastic

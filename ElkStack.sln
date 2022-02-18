@@ -20,6 +20,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elasticsearch", "Elasticsea
 		Elasticsearch\elasticsearch.yml = Elasticsearch\elasticsearch.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kibana", "Kibana", "{90DFA54F-B1D8-483D-A918-DA849E445C6B}"
+	ProjectSection(SolutionItems) = preProject
+		Kibana\Dockerfile = Kibana\Dockerfile
+		Kibana\kibana.yml = Kibana\kibana.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
