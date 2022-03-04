@@ -1,4 +1,4 @@
-﻿namespace ElkStack.Model
+﻿namespace WebApi.Model
 {
     public class Car
     {

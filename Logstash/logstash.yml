@@ -1,0 +1,6 @@
+node:
+  name: local-logstash-node
+pipeline:
+  batch:
+    delay: 1000
+  ecs_compatibility: v1

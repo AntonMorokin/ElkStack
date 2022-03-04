@@ -1,0 +1,26 @@
+elasticsearch:
+  hosts: [ "http://elastic:9200" ]
+  # Disable basic authorization
+  requestHeadersWhitelist: []
+  ssl:
+    verificationMode: none
+map:
+  includeElasticMapsService: false
+newsfeed:
+  enabled: false
+server:
+  name: kibana-main
+  # publicBaseUrl: "http://0.0.0.0:9500"
+  host: "0.0.0.0"
+  port: 9500
+  ssl:
+    enabled: false
+    clientAuthentication: none
+xpack:
+  security:
+    encryptionKey: "61F6B4D2-E8F6-4135-A4A4-155F6ED9AE69-138AE135-D629-4643-8254-AFCB033B57C1"
+  encryptedSavedObjects:
+    encryptionKey: "138AE135-D629-4643-8254-AFCB033B57C1-61F6B4D2-E8F6-4135-A4A4-155F6ED9AE69"
+  reporting:
+    enabled: false
+    # encryptionKey: "61F6B4D2-E8F6-4135-8254-AFCB033B57C1-138AE135-D629-4643-A4A4-155F6ED9AE69"

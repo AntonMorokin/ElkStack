@@ -1,0 +1,28 @@
+network:
+  host: 0.0.0.0
+  
+http:
+  port: 9200
+
+transport:
+  port: 9201
+
+discovery:
+  type: single-node
+  seed_hosts: [ "127.0.0.1:9201" ]
+
+cluster:
+  name: logging-cluster
+  # initial_master_nodes:
+  #   - es-main-node
+
+node:
+  name: es-main-node
+  roles:
+    - master
+    - data
+    - remote_cluster_client
+    
+xpack:
+  security:
+    enabled: false
